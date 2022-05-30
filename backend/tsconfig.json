@@ -7,7 +7,7 @@
       "esnext"
     ],
     "target": "es2015",
-    "outDir": "./lib",
+    "outDir": "./dist",
     "removeComments": true,
     "inlineSourceMap": true,
     "inlineSources": true,
@@ -15,6 +15,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strict": true,
+    "esModuleInterop": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
