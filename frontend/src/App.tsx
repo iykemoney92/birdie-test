@@ -126,21 +126,21 @@ function App() {
     
   }
   return <Grid container style={{ padding: '3rem' }}>
-    <Grid item xs={12} >
-      <Grid item xs={6} sx={{ mb: 3 }}>
+    <Grid item md={12} >
+      <Grid item md={6} sx={{ mb: 3 }}>
         <Alert severity="success">Hello <span role="img" aria-label="smiley">🥰</span> and welcome!!!</Alert>
       </Grid>
 
     </Grid>
-    <Grid item xs={12} >
-      <Grid item xs={6} sx={{ mb: 3 }}>
+    <Grid item md={12} >
+      <Grid item md={6} sx={{ mb: 3 }}>
         <Alert severity="info">Welcome to Birdie 🐦 mood observation dashboard, this will help you visualize {'Bob'}'s mood</Alert>
       </Grid>
     </Grid>
-    <Grid item xs={6}><Card>
+    <Grid item md={6}><Card>
         <Doughnut data={groupedData} options={{maintainAspectRatio: false}} height={300}/>
           </Card></Grid>
-    <Grid item xs={6}>
+    <Grid item md={6}>
       <Card variant="outlined">
         <Table>
           <TableHead>
@@ -169,7 +169,7 @@ function App() {
         </Table>
       </Card>
     </Grid>
-    <Grid item xs={12} style={{textAlign:'center'}}>
+    <Grid item md={12} style={{textAlign:'center'}}>
       <h3>Timeline</h3>
       <Timeline position="alternate">
         {
@@ -185,7 +185,7 @@ function App() {
               <TimelineContent>
                 <div>
                 <Typography variant="h6">{r.mood.toLowerCase()}</Typography>
-                  <Typography variant="caption"><Moment format="YYYY/MM/DD HH:mm a">{r.timestamp}</Moment></Typography>
+                  <Typography variant="caption"><Moment format="YYYY/MM/DD hh:mm a">{r.timestamp}</Moment></Typography>
                 </div>
               </TimelineContent>
             </TimelineItem>
@@ -194,7 +194,7 @@ function App() {
       </Timeline>
     </Grid>
 
-    <Grid item xs={12} style={{textAlign:'center'}}>
+    <Grid item md={12} style={{textAlign:'center'}}>
       <Button variant="contained" onClick={(e) => loadMoreTimeLineDataHandler()} >Load More</Button>
     </Grid>
   </Grid>
