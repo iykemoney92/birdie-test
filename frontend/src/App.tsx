@@ -126,22 +126,22 @@ function App() {
     
   }
   return <Grid container style={{ padding: '3rem' }}>
-    <Grid item md={12} >
-      <Grid item md={6} sx={{ mb: 3 }}>
+    <Grid item xs={12} >
+      <Grid item lg={6} sx={{ mb: 3 }} >
         <Alert severity="success">Hello <span role="img" aria-label="smiley">🥰</span> and welcome!!!</Alert>
       </Grid>
 
     </Grid>
-    <Grid item md={12} >
-      <Grid item md={6} sx={{ mb: 3 }}>
+    <Grid item xs={12} >
+      <Grid item lg={6} sx={{ mb: 3 }} >
         <Alert severity="info">Welcome to Birdie 🐦 mood observation dashboard, this will help you visualize {'Bob'}'s mood</Alert>
       </Grid>
     </Grid>
-    <Grid item md={6}><Card>
+    <Grid item lg={6} xs={12}><Card   sx={{mb:3, mt:3}}>
         <Doughnut data={groupedData} options={{maintainAspectRatio: false}} height={300}/>
           </Card></Grid>
-    <Grid item md={6}>
-      <Card variant="outlined">
+    <Grid item lg={6} xs={12}>
+      <Card sx={{mb:3, mt:3}}>
         <Table>
           <TableHead>
             <TableRow>
@@ -169,7 +169,7 @@ function App() {
         </Table>
       </Card>
     </Grid>
-    <Grid item md={12} style={{textAlign:'center'}}>
+    <Grid item style={{textAlign:'center'}} xs={12}>
       <h3>Timeline</h3>
       <Timeline position="alternate">
         {
@@ -194,7 +194,7 @@ function App() {
       </Timeline>
     </Grid>
 
-    <Grid item md={12} style={{textAlign:'center'}}>
+    <Grid item xs={12} style={{textAlign:'center'}}>
       <Button variant="contained" onClick={(e) => loadMoreTimeLineDataHandler()} >Load More</Button>
     </Grid>
   </Grid>

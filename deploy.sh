@@ -9,6 +9,7 @@ npm install
 npm run build
 cd ../
 echo "node_modules" .gitignore
+cp ./backend/package.json ./
 git init
 git add .
 git commit -m "A commit 😊!!!"
