@@ -13,12 +13,12 @@ dotenv.config();
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.resolve(__dirname, "../../frontend/build")));
+app.use(express.static(path.resolve(__dirname, "../frontend/build")));
 
 app.use(mainController);
 
 app.get("*", (_: Request, res: Response) => {
-  res.sendFile(path.resolve(__dirname, "../../frontend/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
 });
 
 export default app;
