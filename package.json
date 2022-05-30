@@ -3,11 +3,11 @@
     "version": "0.0.0",
     "description": "App",
     "scripts": {
-
         "start": "node backend/dist/index"
     },
     "dependencies": {
         "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
         "dotenv": "^16.0.1",
         "express": "^4.16.4",
         "mysql2": "^2.3.3"
