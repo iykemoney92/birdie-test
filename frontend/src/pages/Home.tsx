@@ -229,7 +229,7 @@ function Home(props:any) {
             onChange={handleDateTimeFrom}
           /></FormControl>
       </Grid>
-      <Grid item lg={4} sx={{ mb: 3 }} xs >
+      <Grid item lg={4} sx={{ mb: 3 }} xs={12} >
         <FormControl fullWidth>
           <TextField
             id="datetime-local-to"
